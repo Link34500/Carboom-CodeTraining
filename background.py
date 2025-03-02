@@ -34,7 +34,7 @@ class Background:
                 background = pygame.image.load("assets/scenes/" + self.image).convert_alpha()
             except FileNotFoundError:
                 background = pygame.image.load("assets/sprites/error.png").convert_alpha()
-            self.background = pygame.transform.scale(background, (0, 0))
+            self.background = pygame.transform.scale(background, (0 , 0))
 
         return self.background
 
